@@ -107,3 +107,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Implemented Sign out API
 - Update Profile API to update display name and photo of user
 - Unsubscribed from onAuthChanged when the header component umounts
+- Registered for TMDB, create an app & get access token
+- Get data from TMDB now playing movies list API
