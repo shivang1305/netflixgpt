@@ -89,3 +89,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Netflix GPT Page
   - Search Bar
   - Movie Recommendations
+
+## Done
+
+- Create React App
+- Configure Tailwind css
+- Header
+- Routing of the app
+- Login/Register Form using Formik
+- Form Validations using Yup
+- Firebase setup
+- Deploying the app to prod
+- Implement signup and signin APIs from firebase
+- Created Redux store
+- Store the user data in the slice
+- Implemented restricted routing based on user authentication
+- Implemented Sign out API
+- Update Profile API to update display name and photo of user

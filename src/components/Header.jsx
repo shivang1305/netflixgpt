@@ -1,11 +1,37 @@
+import { useEffect } from "react";
 import { NETFLIX_LOGO } from "../utils/constants";
 import UserMenu from "./UserMenu";
+import { useDispatch, useSelector } from "react-redux";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../utils/firebase";
+import { addUser, removeUser } from "../utils/slices/userSlice";
+import { useNavigate } from "react-router-dom";
 
-const Header = ({ loggedInUser }) => {
+const Header = () => {
+  const user = useSelector((store) => store.user);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      // user is signed in
+      if (user) {
+        const { uid, email, displayName, photoURL } = user;
+        dispatch(addUser({ uid, email, displayName, photoURL }));
+
+        navigate("/browse");
+      } else {
+        dispatch(removeUser());
+
+        navigate("/");
+      }
+    });
+  }, []);
+
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img src={NETFLIX_LOGO} alt="netflix-logo" className="w-48" />
-      {loggedInUser && <UserMenu />}
+      {user && <UserMenu />}
     </div>
   );
 };
