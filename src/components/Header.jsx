@@ -13,7 +13,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       // user is signed in
       if (user) {
         const { uid, email, displayName, photoURL } = user;
@@ -26,6 +26,8 @@ const Header = () => {
         navigate("/");
       }
     });
+
+    return () => unsubscribe();
   }, []);
 
   return (

@@ -106,3 +106,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Implemented restricted routing based on user authentication
 - Implemented Sign out API
 - Update Profile API to update display name and photo of user
+- Unsubscribed from onAuthChanged when the header component umounts
