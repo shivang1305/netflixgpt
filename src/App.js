@@ -1,13 +1,44 @@
-import { Outlet } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import Body from "./components/Body";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Browse from "./pages/Browse";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+import Error from "./pages/Error";
+import Auth from "./pages/Auth";
 
 function App() {
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Body />,
+    },
+    {
+      path: "/login",
+      element: <Auth />,
+    },
+    {
+      path: "/register",
+      element: <Auth />,
+    },
+    {
+      path: "/browse",
+      element: <Browse />,
+    },
+    {
+      path: "/error",
+      element: <Error />,
+    },
+  ]);
+
   return (
-    <>
-      <Header />
-      <Outlet />
-    </>
+    <Provider store={store}>
+      <RouterProvider router={appRouter}>
+        <Header />
+        <Outlet />
+      </RouterProvider>
+    </Provider>
   );
 }
 
