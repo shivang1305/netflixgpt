@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { addUser } from "../utils/slices/userSlice";
 import { useDispatch } from "react-redux";
+import { GITHUB_USER_IMG } from "../utils/constants";
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const RegisterForm = () => {
 
         updateProfile(user, {
           displayName: name,
-          photoURL: "https://avatars.githubusercontent.com/u/45060274?v=4",
+          photoURL: GITHUB_USER_IMG,
         })
           .then(() => {
             const { uid, email, displayName, photoURL } = auth.currentUser;

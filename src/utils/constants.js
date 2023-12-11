@@ -6,3 +6,6 @@ export const HOME_BG_IMG =
 
 export const USER_LOGO_IMG =
   "https://occ-0-3216-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTZ2zlLdBVC05fsd2YQAR43J6vB1NAUBOOrxt7oaFATxMhtdzlNZ846H3D8TZzooe2-FT853YVYs8p001KVFYopWi4D4NXM.png?r=229";
+
+export const GITHUB_USER_IMG =
+  "https://avatars.githubusercontent.com/u/45060274?v=4";
