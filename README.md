@@ -111,3 +111,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Get data from TMDB now playing movies list API
 - Browse Page which contains of movie title and movie background comps
 - Movie trailer API called from TMDB and filetered the result for the trailer of movie.
+- Main Container UI design
+- Trailer autoplay feature is added from the youtube embedded

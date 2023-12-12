@@ -46,16 +46,12 @@ const RegisterForm = () => {
             const errorCode = error.code;
             const errorMessage = error.message;
 
-            console.log(errorCode);
-
             setRegisterError(errorMessage);
           });
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-
-        console.log(errorCode);
 
         setRegisterError(errorMessage);
       });

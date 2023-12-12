@@ -25,13 +25,10 @@ const LoginForm = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-
-        console.log(errorCode);
 
         if (errorCode === "auth/invalid-login-credentials")
           setLoginError("Invalid email id or password");

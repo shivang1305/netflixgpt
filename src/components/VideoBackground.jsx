@@ -8,11 +8,10 @@ const VideoBackground = ({ movieID }) => {
   useMovieTrailer(movieID);
 
   return (
-    <div>
+    <div className="w-screen">
       <iframe
-        width="560"
-        height="315"
-        src={YOUTUBE_VIDEO_URL + trailer?.key}
+        className="w-screen aspect-video"
+        src={YOUTUBE_VIDEO_URL + trailer?.key + "?autoplay=1&mute=1"}
         title="YouTube video player"
       ></iframe>
     </div>
