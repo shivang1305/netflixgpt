@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
-import MovieContainer from "../components/MovieContainer";
-import MovieListContainer from "../components/MovieListContainer";
+import MovieContainer from "../components/movies/MovieContainer";
+import MovieListContainer from "../components/movies/MovieListContainer";
 
 const Browse = () => {
   useNowPlayingMovies();

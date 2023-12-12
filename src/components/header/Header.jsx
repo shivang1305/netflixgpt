@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { NETFLIX_LOGO } from "../utils/constants";
+import { NETFLIX_LOGO } from "../../utils/constants";
 import UserMenu from "./UserMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../utils/firebase";
-import { addUser, removeUser } from "../utils/slices/userSlice";
+import { auth } from "../../utils/firebase";
+import { addUser, removeUser } from "../../utils/slices/userSlice";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
