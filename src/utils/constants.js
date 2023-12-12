@@ -10,6 +10,15 @@ export const USER_LOGO_IMG =
 export const GITHUB_USER_IMG =
   "https://avatars.githubusercontent.com/u/45060274?v=4";
 
+export const NOW_PLAYING_MOVIES_API =
+  "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
+
+export const GET_VIDEOS_API = (movieID) => {
+  return `https://api.themoviedb.org/3/movie/${movieID}/videos`;
+};
+
+export const YOUTUBE_VIDEO_URL = "https://www.youtube.com/embed/";
+
 export const API_OPTIONS = {
   method: "GET",
   headers: {
