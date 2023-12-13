@@ -2,13 +2,14 @@ import React from "react";
 import VideoBackground from "../videos/VideoBackground";
 import VideoTitle from "../videos/VideoTitle";
 import { useSelector } from "react-redux";
+import { getRandomMovie } from "../../utils/helper";
 
-const MovieContainer = () => {
-  const movies = useSelector((store) => store.movies?.nowPlayingMovies);
+const MainMovieContainer = () => {
+  const movies = useSelector((store) => store.movies?.nowPlaying);
 
   if (!movies) return;
 
-  const mainMovie = movies[1];
+  const mainMovie = getRandomMovie(movies);
 
   const { title, overview, id } = mainMovie;
 
@@ -20,4 +21,4 @@ const MovieContainer = () => {
   );
 };
 
-export default MovieContainer;
+export default MainMovieContainer;

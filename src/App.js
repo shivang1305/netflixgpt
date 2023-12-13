@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Browse from "./pages/Browse";
 import { Provider } from "react-redux";

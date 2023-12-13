@@ -13,6 +13,15 @@ export const GITHUB_USER_IMG =
 export const NOW_PLAYING_MOVIES_API =
   "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
 
+export const POPULAR_MOVIES_API =
+  "https://api.themoviedb.org/3/trending/movie/day";
+
+export const TOP_RATED_MOVIES_API =
+  "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1";
+
+export const UPCOMING_MOVIES_API =
+  "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1";
+
 export const GET_VIDEOS_API = (movieID) => {
   return `https://api.themoviedb.org/3/movie/${movieID}/videos`;
 };
@@ -27,3 +36,5 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYzQzMDhmODhjMjlmZTFhN2FmMGIyYjY4ZGIyYmYwOSIsInN1YiI6IjY0NDQyMGY4Y2VlMmY2NjdlNzM2Y2Q2MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qWetREBgf0hiSLaBTaDGD_yePkkKYGBcDt7mjGWs618",
   },
 };
+
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";

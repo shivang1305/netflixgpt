@@ -113,3 +113,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Movie trailer API called from TMDB and filetered the result for the trailer of movie.
 - Main Container UI design
 - Trailer autoplay feature is added from the youtube embedded
+- Secondary Container UI design
+- Calling movies list APIs for getting movies list of different categories
+- Overlapping the secondary container on top of main container
+- Custom hook for each different category movie API call
+- Getting random movie from the movie list as the main movie to play its trailer.
+- Saving all the movies data in the redux store and fetching the data into the UI from the store

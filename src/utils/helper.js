@@ -4,3 +4,11 @@ export const getTrailer = (results) => {
   const trailer = filteredVideos.length ? filteredVideos[0] : results[0];
   return trailer;
 };
+
+export const getRandomMovie = (movies) => {
+  const length = movies.length;
+
+  const randomMovie = movies[Math.floor(Math.random() * length)];
+
+  return randomMovie;
+};
