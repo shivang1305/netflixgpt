@@ -119,3 +119,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Custom hook for each different category movie API call
 - Getting random movie from the movie list as the main movie to play its trailer.
 - Saving all the movies data in the redux store and fetching the data into the UI from the store
+- Made a the video autoplay in loop in the background of the browse page
