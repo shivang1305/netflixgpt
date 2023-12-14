@@ -121,4 +121,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Saving all the movies data in the redux store and fetching the data into the UI from the store
 - Made a the video autoplay in loop in the background of the browse page
 - Add GPT search button in the header
-- Make a toggle view of GPT search component.
+- Make a toggle view of GPT search component
+- Made the search bar and movie suggesrions component in GPT search view

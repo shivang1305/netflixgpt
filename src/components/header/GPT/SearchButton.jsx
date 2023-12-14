@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { toggleGptSearchView } from "../../utils/slices/gptSlice";
+import { toggleGptSearchView } from "../../../utils/slices/gptSlice";
 
-const GPTSearchButton = () => {
+const SearchButton = () => {
   const dispatch = useDispatch();
 
   const handleSearchClick = () => {
@@ -19,4 +19,4 @@ const GPTSearchButton = () => {
   );
 };
 
-export default GPTSearchButton;
+export default SearchButton;
