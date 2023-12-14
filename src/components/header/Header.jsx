@@ -6,6 +6,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../utils/firebase";
 import { addUser, removeUser } from "../../utils/slices/userSlice";
 import { useNavigate } from "react-router-dom";
+import GPTSearchButton from "./GPTSearchButton";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -33,7 +34,12 @@ const Header = () => {
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img src={NETFLIX_LOGO} alt="netflix-logo" className="w-48" />
-      {user && <UserMenu />}
+      {user && (
+        <div className="flex p-2">
+          <GPTSearchButton />
+          <UserMenu />
+        </div>
+      )}
     </div>
   );
 };
