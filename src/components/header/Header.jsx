@@ -11,6 +11,8 @@ import LanguageSelection from "./LanguageSelection";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -37,7 +39,7 @@ const Header = () => {
       <img src={NETFLIX_LOGO} alt="netflix-logo" className="w-48" />
       {user && (
         <div className="flex p-2">
-          <LanguageSelection />
+          {showGptSearch && <LanguageSelection />}
           <SearchButton />
           <UserMenu />
         </div>
