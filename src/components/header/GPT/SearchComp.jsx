@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import MovieSuggestions from "./MovieSuggestions";
-import { HOME_BG_IMG } from "../../../utils/constants";
+import { HOME_BG_IMG } from "../../../utils/constants/constants";
 
 const SearchComp = () => {
   return (

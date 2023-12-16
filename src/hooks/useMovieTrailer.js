@@ -1,9 +1,9 @@
-import { API_OPTIONS, GET_VIDEOS_API } from "../utils/constants";
+import { API_OPTIONS, GET_VIDEOS_API } from "../utils/constants/constants";
 
 import { useEffect } from "react";
 import { getTrailer } from "../utils/helper";
 import { useDispatch } from "react-redux";
-import { addTrailerVideo } from "../utils/slices/moviesSlice";
+import { addTrailerVideo } from "../redux/slices/moviesSlice";
 
 const useMovieTrailer = (movieID) => {
   const dispatch = useDispatch();

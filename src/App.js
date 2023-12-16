@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Browse from "./pages/Browse";
 import { Provider } from "react-redux";
-import store from "./utils/store";
+import store from "./redux/store";
 import Error from "./pages/Error";
 import Auth from "./pages/Auth";
 

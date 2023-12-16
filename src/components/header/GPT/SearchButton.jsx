@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { toggleGptSearchView } from "../../../utils/slices/gptSlice";
+import { toggleGptSearchView } from "../../../redux/slices/gptSlice";
 
 const SearchButton = () => {
   const dispatch = useDispatch();

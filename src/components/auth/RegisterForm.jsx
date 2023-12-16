@@ -4,9 +4,9 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { addUser } from "../../utils/slices/userSlice";
+import { addUser } from "../../redux/slices/userSlice";
 import { useDispatch } from "react-redux";
-import { GITHUB_USER_IMG } from "../../utils/constants";
+import { GITHUB_USER_IMG } from "../../utils/constants/constants";
 
 const RegisterForm = () => {
   const navigate = useNavigate();

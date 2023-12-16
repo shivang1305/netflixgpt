@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { USER_LOGO_IMG } from "../../utils/constants";
+import { USER_LOGO_IMG } from "../../utils/constants/constants";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { signOut } from "firebase/auth";
 import { auth } from "../../utils/firebase";

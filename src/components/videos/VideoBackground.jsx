@@ -1,9 +1,6 @@
 import React from "react";
 import useMovieTrailer from "../../hooks/useMovieTrailer";
-import {
-  GET_YOUTUBE_VIDEO_URL,
-  YOUTUBE_VIDEO_URL,
-} from "../../utils/constants";
+import { GET_YOUTUBE_VIDEO_URL } from "../../utils/constants/constants";
 import { useSelector } from "react-redux";
 
 const VideoBackground = ({ movieID }) => {
