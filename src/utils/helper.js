@@ -12,3 +12,11 @@ export const getRandomMovie = (movies) => {
 
   return randomMovie;
 };
+
+export const getVideosAPI = (movieID) => {
+  return `https://api.themoviedb.org/3/movie/${movieID}/videos`;
+};
+
+export const getYoutubeVideoURL = (vedioID) => {
+  return `https://www.youtube.com/embed/${vedioID}?autoplay=1&mute=1&loop=1&playlist=${vedioID}`;
+};

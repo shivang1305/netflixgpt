@@ -22,14 +22,6 @@ export const TOP_RATED_MOVIES_API =
 export const UPCOMING_MOVIES_API =
   "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1";
 
-export const GET_VIDEOS_API = (movieID) => {
-  return `https://api.themoviedb.org/3/movie/${movieID}/videos`;
-};
-
-export const GET_YOUTUBE_VIDEO_URL = (vedioID) => {
-  return `https://www.youtube.com/embed/${vedioID}?autoplay=1&mute=1&loop=1&playlist=${vedioID}`;
-};
-
 export const API_OPTIONS = {
   method: "GET",
   headers: {

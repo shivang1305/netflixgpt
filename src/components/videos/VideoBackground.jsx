@@ -1,7 +1,7 @@
 import React from "react";
 import useMovieTrailer from "../../hooks/useMovieTrailer";
-import { GET_YOUTUBE_VIDEO_URL } from "../../utils/constants/constants";
 import { useSelector } from "react-redux";
+import { getYoutubeVideoURL } from "../../utils/helper";
 
 const VideoBackground = ({ movieID }) => {
   const trailer = useSelector((store) => store.movies?.trailerVideo);
@@ -11,7 +11,7 @@ const VideoBackground = ({ movieID }) => {
     <div className="w-screen aspect-video">
       <iframe
         className="w-screen aspect-video"
-        src={GET_YOUTUBE_VIDEO_URL(trailer?.key)}
+        src={getYoutubeVideoURL(trailer?.key)}
         title="YouTube video player"
       ></iframe>
     </div>
