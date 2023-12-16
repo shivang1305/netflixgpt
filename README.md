@@ -123,3 +123,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Add GPT search button in the header
 - Make a toggle view of GPT search component
 - Made the search bar and movie suggesrions component in GPT search view
+- Add language support to gpt search page
+- Show the content of the page in different languages (like english, hindi, spanish)
+- Change the language with the help of redux store using config slice.

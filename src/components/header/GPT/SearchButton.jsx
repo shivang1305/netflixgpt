@@ -12,7 +12,7 @@ const SearchButton = () => {
   return (
     <button
       onClick={handleSearchClick}
-      className="bg-purple-600 text-white text-xl font-semibold rounded-lg mx-4 my-2 py-2 px-4 hover:bg-purple-800"
+      className="bg-purple-600 text-white text-xl font-semibold rounded-lg p-4 m-4 hover:bg-purple-800"
     >
       GPT Search
     </button>
