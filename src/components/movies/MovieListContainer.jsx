@@ -2,7 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieListContainer = ({ category, movies }) => {
-  if (movies.length === 0) return null;
+  if (movies?.length === 0) return null;
   return (
     <div className="p-5">
       <h1 className="font-semibold text-3xl py-4 text-white">{category}</h1>

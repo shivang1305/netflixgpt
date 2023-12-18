@@ -129,3 +129,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Integrated OpenAI API in the app and passed the query in the params
 - Saved the openAI movie recommendations in the redux store
 - Build the movie suggestions page UI using the data we saved in the redux store
+- Move all the API keys to .env file
