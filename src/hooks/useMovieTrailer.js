@@ -7,7 +7,7 @@ import { addTrailerVideo } from "../redux/slices/moviesSlice";
 
 const useMovieTrailer = (movieID) => {
   const dispatch = useDispatch();
-  const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
+  const trailerVideo = useSelector((store) => store.movies.trailerVideo);
 
   const getMovieVideosList = async () => {
     const data = await fetch(getVideosAPI(movieID), API_OPTIONS);
