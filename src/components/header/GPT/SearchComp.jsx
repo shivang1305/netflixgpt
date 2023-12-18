@@ -6,8 +6,8 @@ import { HOME_BG_IMG } from "../../../utils/constants/constants";
 const SearchComp = () => {
   return (
     <div>
-      <div className="absolute w-full -z-10">
-        <img src={HOME_BG_IMG} alt="netflix-bg-img" className="w-full" />
+      <div className="fixed w-full h-full -z-10">
+        <img src={HOME_BG_IMG} alt="netflix-bg-img" className="w-full h-full" />
       </div>
       <SearchBar />
       <MovieSuggestions />
