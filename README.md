@@ -127,3 +127,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Show the content of the page in different languages (like english, hindi, spanish)
 - Change the language with the help of redux store using config slice
 - Integrated OpenAI API in the app and passed the query in the params
+- Saved the openAI movie recommendations in the redux store
