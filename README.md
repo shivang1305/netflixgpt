@@ -130,3 +130,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Saved the openAI movie recommendations in the redux store
 - Build the movie suggestions page UI using the data we saved in the redux store
 - Move all the API keys to .env file
+- Reduce the number of repetitive API calls each time the component re-renders in the browser.
+- Memoize the API calls and check whether the data is present in the redux store or not.
+- Based on this either make or prevent an API call.
