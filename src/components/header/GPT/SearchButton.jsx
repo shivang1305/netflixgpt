@@ -13,9 +13,9 @@ const SearchButton = () => {
   return (
     <button
       onClick={handleSearchClick}
-      className="bg-purple-600 text-white text-xl font-semibold rounded-lg p-4 m-4 hover:bg-purple-800"
+      className="bg-purple-600 text-white text-lg md:text-xl md:font-semibold rounded-lg p-1 m-1 h-full md:p-2 hover:bg-purple-800"
     >
-      {showGptSearch ? "Home Page" : "GPT Search"}
+      {showGptSearch ? "Homepage" : "GPT Search"}
     </button>
   );
 };

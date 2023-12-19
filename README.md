@@ -133,3 +133,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Reduce the number of repetitive API calls each time the component re-renders in the browser.
 - Memoize the API calls and check whether the data is present in the redux store or not.
 - Based on this either make or prevent an API call.
+- Make the app responsive for smaller screens.

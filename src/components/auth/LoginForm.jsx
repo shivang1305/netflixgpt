@@ -44,7 +44,7 @@ const LoginForm = () => {
         onSubmitHandler(values);
       }}
     >
-      <Form className="absolute w-3/12 p-12 bg-black my-36 mx-auto left-0 right-0 text-white bg-opacity-80">
+      <Form className="absolute w-full rounded-lg md:w-3/12 p-12 bg-black my-36 mx-auto left-0 right-0 text-white bg-opacity-80">
         <h1 className="font-bold text-2xl mb-4">Sign In</h1>
 
         <Field

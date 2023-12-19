@@ -5,13 +5,19 @@ import { HOME_BG_IMG } from "../../../utils/constants/constants";
 
 const SearchComp = () => {
   return (
-    <div>
-      <div className="fixed w-full h-full -z-10">
-        <img src={HOME_BG_IMG} alt="netflix-bg-img" className="w-full h-full" />
+    <>
+      <div className="fixed w-screen -z-10">
+        <img
+          src={HOME_BG_IMG}
+          alt="netflix-bg-img"
+          className="w-full h-screen object-cover"
+        />
       </div>
-      <SearchBar />
-      <MovieSuggestions />
-    </div>
+      <div>
+        <SearchBar />
+        <MovieSuggestions />
+      </div>
+    </>
   );
 };
 

@@ -12,8 +12,12 @@ const Auth = () => {
   return (
     <>
       <Header />
-      <div className="absolute w-full">
-        <img src={HOME_BG_IMG} alt="netflix-bg-img" className="w-full" />
+      <div className="fixed w-screen -z-10">
+        <img
+          src={HOME_BG_IMG}
+          alt="netflix-bg-img"
+          className="w-full h-screen object-cover"
+        />
       </div>
       {path === "/login" || path === "/" ? <LoginForm /> : <RegisterForm />}
     </>

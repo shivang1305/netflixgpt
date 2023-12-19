@@ -30,15 +30,18 @@ const UserMenu = () => {
         // onBlur={() => setIsMenuOpen(false)}
       >
         <img
-          className="h-12 w-12 rounded-full"
+          className=" h-10 w-10 md:h-12 md:w-12 rounded-full"
           alt="user-img"
           src={user?.photoURL ? user?.photoURL : USER_LOGO_IMG}
         />
         <AiOutlineCaretDown className="h-8 m-2" />
       </button>
       {isMenuOpen && (
-        <div className="absolute top-20 font-semibold text-xl bg-slate-200 rounded-full">
-          <button className="p-2 m-2" onClick={handleSignout}>
+        <div className="absolute top-14 md:top-20 font-semibold text-lg md:text-xl bg-slate-200 rounded-lg">
+          <button
+            className="h-full p-1 m-1 md:p-2 md:m-2"
+            onClick={handleSignout}
+          >
             Signout
           </button>
         </div>
