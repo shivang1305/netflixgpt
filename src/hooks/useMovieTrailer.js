@@ -1,5 +1,4 @@
 import { API_OPTIONS } from "../utils/constants/constants";
-
 import { useEffect } from "react";
 import { getTrailer, getVideosAPI } from "../utils/helper";
 import { useDispatch, useSelector } from "react-redux";
